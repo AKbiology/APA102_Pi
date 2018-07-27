@@ -13,7 +13,7 @@ MY_CYCLE.start()
 # Go twice around the clock
 print('Go twice around the clock')
 MY_CYCLE = colorschemes.RoundAndRound(num_led=NUM_LED, pause_value=0,
-                                     num_steps_per_cycle=NUM_LED, num_cycles=2, mosi=20, sclk=21)
+                                     num_steps_per_cycle=NUM_LED, num_cycles=2, mosi=10, sclk=11)
 MY_CYCLE.start()
 
 # One cycle of red, green and blue each
