@@ -2,24 +2,12 @@
 """Sample script to run a few colour tests on the strip."""
 import colorschemes
 
-NUM_LED = 430
+NUM_LED = 200
 
 # One Cycle with one step and a pause of three seconds. Hence three seconds of white light
 print('Three Seconds of white light')
 MY_CYCLE = colorschemes.Solid(num_led=NUM_LED, pause_value=3,
                              num_steps_per_cycle=1, num_cycles=1)
-MY_CYCLE.start()
-
-# Go twice around the clock
-print('Go twice around the clock')
-MY_CYCLE = colorschemes.RoundAndRound(num_led=NUM_LED, pause_value=0,
-                                     num_steps_per_cycle=NUM_LED, num_cycles=2, mosi=10, sclk=11)
-MY_CYCLE.start()
-
-# One cycle of red, green and blue each
-print('One strandtest of red, green and blue each')
-MY_CYCLE = colorschemes.StrandTest(num_led=NUM_LED, pause_value=0,
-                                  num_steps_per_cycle=NUM_LED, num_cycles=3)
 MY_CYCLE.start()
 
 # One slow trip through the rainbow
