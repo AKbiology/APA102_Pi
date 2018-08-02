@@ -1,6 +1,7 @@
 """This module contains a few concrete colour cycles to play with"""
 
 from colorcycletemplate import ColorCycleTemplate
+from colorcycletemplate2 import ColorCycleTemplate2
 
 class StrandTest(ColorCycleTemplate):
     """Runs a simple strand test (9 LEDs wander through the strip)."""
@@ -49,6 +50,23 @@ class TheaterChase(ColorCycleTemplate):
             else: strip.set_pixel_rgb(pixel, color_index)
         return 1
 
+class TheaterChase2(ColorCycleTemplate2):
+    """Runs a 'marquee' effect around the strip."""
+    def update(self, strip, num_led, num_steps_per_cycle, current_step,
+               current_cycle):
+        # One cycle = One trip through the color wheel, 0..254
+        # Few cycles = quick transition, lots of cycles = slow transition
+        # Note: For a smooth transition between cycles, numStepsPerCycle must
+        # be a multiple of 7
+        start_index = current_step % 7 # One segment is 2 blank, and 5 filled
+        color_index = strip.combine_color(0,255,255)
+        for pixel in range(num_led):
+            # Two LEDs out of 7 are blank. At each step, the blank
+            # ones move one pixel ahead.
+            if ((pixel+start_index) % 7 == 0) or ((pixel+start_index) % 7 == 1):
+                strip.set_pixel_rgb(pixel, 0)
+            else: strip.set_pixel_rgb(pixel, color_index)
+        return 1
 
 class RoundAndRound(ColorCycleTemplate):
     """Runs three LEDs around the strip."""
