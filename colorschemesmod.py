@@ -61,7 +61,7 @@ class TheaterChase2(ColorCycleTemplate2):
             else: strip.set_pixel_rgb(pixel, color_index)
         return 1
 		
-class TheaterChase3(ColorCycleTemplate2):
+class TheaterChase3(ColorCycleTemplate):
     def update(self, strip, num_led, num_steps_per_cycle, current_step,
                current_cycle):
         start_index = current_step % 7
