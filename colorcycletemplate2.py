@@ -3,7 +3,8 @@ import time
 import apa102
 
 class ColorCycleTemplate2:
-      
+
+        
     def __init__(self, num_led, pause_value = 0, num_steps_per_cycle = 100,
                  num_cycles = -1, global_brightness = 255, order = 'rbg',
                  mosi = 20, sclk = 21):
