@@ -2,7 +2,7 @@
 
 import colorschemesmod
 
-NUM_LED = 100
+NUM_LED = 200
 
 print('Cyan Cycle')
 
