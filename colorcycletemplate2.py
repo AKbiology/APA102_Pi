@@ -3,13 +3,7 @@ import time
 import apa102
 
 class ColorCycleTemplate2:
-    """This class is the basis of all color cycles.
-    This file is usually used "as is" and not being changed.
-
-    A specific color cycle must subclass this template, and implement at least the
-    'update' method.
-    """
-        
+      
     def __init__(self, num_led, pause_value = 0, num_steps_per_cycle = 100,
                  num_cycles = -1, global_brightness = 255, order = 'rbg',
                  mosi = 20, sclk = 21):
