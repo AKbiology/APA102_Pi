@@ -4,9 +4,9 @@ import colorschemesmod
 
 NUM_LED = 200
 
-print('Red Cycle')
+print('Pink Cycle')
 
-MY_CYCLE = colorschemesmod.TheaterChase3(num_led=NUM_LED, pause_value=0.04,
+MY_CYCLE = colorschemesmod.PinkChase(num_led=NUM_LED, pause_value=0.04,
                                     num_steps_per_cycle=35, num_cycles=200)
 
 							

@@ -94,6 +94,17 @@ class TheaterChase5(ColorCycleTemplate):
             else: strip.set_pixel_rgb(pixel, color_index)
         return 1
 		
+class PinkChase(ColorCycleTemplate):
+    def update(self, strip, num_led, num_steps_per_cycle, current_step,
+               current_cycle):
+        start_index = current_step % 7
+        color_index = strip.combine_color(255,40,40)
+        for pixel in range(num_led):
+            if ((pixel+start_index) % 7 == 0) or ((pixel+start_index) % 7 == 1):
+                strip.set_pixel_rgb(pixel, 0)
+            else: strip.set_pixel_rgb(pixel, color_index)
+        return 1
+		
 class PurpleChase(ColorCycleTemplate):
     def update(self, strip, num_led, num_steps_per_cycle, current_step,
                current_cycle):
