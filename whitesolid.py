@@ -2,7 +2,7 @@
 
 import colorschemesmod
 
-NUM_LED = 200
+NUM_LED = 300
 
 print('Visual cycle')
 
