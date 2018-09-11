@@ -8,8 +8,8 @@ print('Visual cycle')
 
 MY_CYCLE = colorschemesmod.Solid(num_led=NUM_LED, num_steps_per_cycle=1, num_cycles=1000)
 
-while True:									
-	MY_CYCLE.start()
+						
+MY_CYCLE.start()
 
 
 print('Stopped')
