@@ -147,6 +147,16 @@ class Solid(ColorCycleTemplate):
 
     def update(self, strip, num_led, num_steps_per_cycle, current_step,
                current_cycle):
+            stripcolour = 0xFFFFFF
+        for led in range(0, num_led):
+            strip.set_pixel_rgb(led,stripcolour,100) 
+        return 1
+		
+class Solid2(ColorCycleTemplate):
+    """Paints the strip with one colour."""
+
+    def update(self, strip, num_led, num_steps_per_cycle, current_step,
+               current_cycle):
         if (current_step == 0):
             stripcolour = 0xFFFFFF
         if (current_step == 1):
