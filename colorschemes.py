@@ -80,7 +80,7 @@ class Solid(ColorCycleTemplate):
         if (current_step == 3):
             stripcolour = 0x0000FF
         for led in range(0, num_led):
-            strip.set_pixel_rgb(led,stripcolour,5) # Paint 5% white  
+            strip.set_pixel_rgb(led,stripcolour,50) # Paint 5% white  
         return 1
 
 
