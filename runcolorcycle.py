@@ -6,7 +6,7 @@ NUM_LED = 200
 
 # One Cycle with one step and a pause of three seconds. Hence three seconds of white light
 print('Three Seconds of white light')
-MY_CYCLE = colorschemes.Solid(num_led=NUM_LED, pause_value=3,
+MY_CYCLE = colorschemes.Solid2(num_led=NUM_LED, pause_value=3,
                              num_steps_per_cycle=1, num_cycles=1)
 MY_CYCLE.start()
 
