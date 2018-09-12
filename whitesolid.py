@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-import colorschemesmod
+import colorschemes
 
-NUM_LED = 300
+NUM_LED = 200
 
 print('Visual cycle')
 
