@@ -83,8 +83,6 @@ class ColorCycleTemplate:
                     if current_cycle >= self.num_cycles:
                         break
             # Finished, cleanup everything
-            self.cleanup(strip)
 
         except KeyboardInterrupt:  # Ctrl-C can halt the light program
             print('Interrupted...')
-            self.cleanup(strip)
