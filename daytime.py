@@ -2,6 +2,7 @@
 """Sample script to run a few colour tests on the strip."""
 import colorschemes
 import datetime
+import time
 
 NUM_LED = 200
 now = datetime.datetime.now()
