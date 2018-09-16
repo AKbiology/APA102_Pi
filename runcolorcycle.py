@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Sample script to run a few colour tests on the strip."""
 import colorschemes
+import datetime
 
 NUM_LED = 200
+today = datetime.date.today()
 
 # One Cycle with one step and a pause of three seconds. Hence three seconds of white light
 print('Three Seconds of white light')
@@ -23,3 +25,4 @@ MY_CYCLE = colorschemes.TheaterChase(num_led=NUM_LED, pause_value=0.04,
 MY_CYCLE.start()
 
 print('Finished the test')
+print 'ctime:', today.ctime()
