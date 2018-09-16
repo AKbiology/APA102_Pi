@@ -25,4 +25,4 @@ MY_CYCLE = colorschemes.TheaterChase(num_led=NUM_LED, pause_value=0.04,
 MY_CYCLE.start()
 
 print('Finished the test')
-print 'ctime:', today.ctime()
+print( 'ctime:', today.ctime())
