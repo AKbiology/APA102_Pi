@@ -44,7 +44,10 @@ while True:
 
 	if (CRYO == 1):
 		print('it is nighttime now')
+		time.sleep(30)
 	if (CRYO == 3):
 		print('it is daytime now')
+		time.sleep(30)
 	if (CRYO == 2):
 		print('it is morning now')
+		time.sleep(30)
