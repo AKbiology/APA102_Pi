@@ -4,7 +4,7 @@ import colorschemes
 import datetime
 
 NUM_LED = 200
-today = datetime.date.now()
+today = datetime.datetime.now()
 
 # One Cycle with one step and a pause of three seconds. Hence three seconds of white light
 print('Three Seconds of white light')
