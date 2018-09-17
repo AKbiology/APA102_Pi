@@ -7,7 +7,7 @@ import time
 NUM_LED = 200
 now = datetime.datetime.now()
 today7am = now.replace(hour=7, minute=0, second=0, microsecond=0)
-today7pm = now.replace(hour=20, minute=0, second=0, microsecond=0)
+today7pm = now.replace(hour=19, minute=0, second=0, microsecond=0)
 
 if (now < today7am):
 		print('set morning')
@@ -42,6 +42,8 @@ while True:
 							num_steps_per_cycle=35, num_cycles=5)
 		CRYO = 1
 		MY_CYCLE.start()
+		
+	print CRYO
 
 	if (CRYO == 1):
 		print('it is nighttime now')
@@ -52,3 +54,5 @@ while True:
 	if (CRYO == 2):
 		print('it is morning now')
 		time.sleep(30)
+		
+	
