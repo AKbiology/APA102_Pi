@@ -43,7 +43,7 @@ while True:
 		CRYO = 1
 		MY_CYCLE.start()
 		
-	print CRYO
+	print(CRYO)
 
 	if (CRYO == 1):
 		print('it is nighttime now')
