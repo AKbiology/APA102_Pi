@@ -23,8 +23,8 @@ while True:
 
 	if (now < today7am) and (CRYO == 1):
 		print('Early morning')
-		MY_CYCLE = colorschemes.TheaterChase(num_led=NUM_LED, pause_value=0.04,
-							num_steps_per_cycle=35, num_cycles=5)
+		MY_CYCLE = colorschemes.Solid2(num_led=NUM_LED, pause_value=4,
+							num_steps_per_cycle=1, num_cycles=1)
 		CRYO = 2
 		MY_CYCLE.start()
 
@@ -38,8 +38,8 @@ while True:
 
 	if (now > today7pm) and (CRYO == 3):
 		print('Nighttime')
-		MY_CYCLE = colorschemes.TheaterChase(num_led=NUM_LED, pause_value=0.04,
-							num_steps_per_cycle=35, num_cycles=5)
+		MY_CYCLE = colorschemes.Solid2(num_led=NUM_LED, pause_value=4,
+							num_steps_per_cycle=1, num_cycles=1)
 		CRYO = 1
 		MY_CYCLE.start()
 		
