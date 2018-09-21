@@ -21,6 +21,9 @@ if (now > today7pm):
 
 while True:
 
+today7am = now.replace(hour=7, minute=0, second=0, microsecond=0)
+today7pm = now.replace(hour=19, minute=0, second=0, microsecond=0)
+
 	if (now < today7am) and (CRYO == 1):
 		print('Early morning')
 		MY_CYCLE = colorschemes.Solid2(num_led=NUM_LED, pause_value=4,
@@ -44,15 +47,15 @@ while True:
 		MY_CYCLE.start()
 		
 	print(CRYO)
+	print(today7am)
+	print(today7pm)
 
 	if (CRYO == 1):
 		print('it is nighttime now')
-		time.sleep(30)
 	if (CRYO == 3):
 		print('it is daytime now')
-		time.sleep(30)
 	if (CRYO == 2):
 		print('it is morning now')
-		time.sleep(30)
 		
+	time.sleep(30)	
 	
