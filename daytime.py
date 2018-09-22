@@ -23,6 +23,7 @@ while True:
 
 	today7am = now.replace(hour=7, minute=0, second=0, microsecond=0)
 	today7pm = now.replace(hour=19, minute=0, second=0, microsecond=0)
+	now = datetime.datetime.now()
 
 	if (now < today7am) and (CRYO == 1):
 		print('Early morning')
