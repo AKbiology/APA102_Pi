@@ -9,7 +9,7 @@ class StrandTest(ColorCycleTemplate):
     color = None
 
     def init(self, strip, num_led):
-        self.color = 0x000000  # Initialize with black
+        
 
     def update(self, strip, num_led, num_steps_per_cycle, current_step,
                current_cycle):
