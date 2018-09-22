@@ -49,6 +49,7 @@ while True:
 	print(CRYO)
 	print(today7am)
 	print(today7pm)
+	print(now)
 
 	if (CRYO == 1):
 		print('it is nighttime now')
