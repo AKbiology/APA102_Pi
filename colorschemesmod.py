@@ -8,9 +8,7 @@ class StrandTest(ColorCycleTemplate):
 
     color = None
 
-    def init(self, strip, num_led):
-        
-
+       
     def update(self, strip, num_led, num_steps_per_cycle, current_step,
                current_cycle):
         # One cycle = The 9 Test-LEDs wander through numStepsPerCycle LEDs.
